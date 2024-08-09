@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box; /* define o modelo de box-sizing */
+    padding: 0; /* remove o padding */
+    margin: 0; /* remove a margem */
+}
+body{
+    font-family: Arial, sans-serif; /* define a fonte */
+    background-color: #ebebeb; /* cor de fundo do body */
+}
+.header-inner-content{
+    max-width: 1300px; /* largura máxima do conteúdo */
+    margin-left: auto; /* centraliza o conteúdo horizontalmente */
+    margin-right: auto; /* centraliza o conteúdo horizontalmente */
+}
+.navbar{
+    background-color: #802629; /* cor de fundo */
+    padding: 0rem; /* padding da barra */
+    position: sticky; /* fixa a barra no topo da página ao rolar */
+    top: 0; /* fixa no topo da página */
+    box-shadow: 10px 0px 10px #696969; /* sombra */
+    z-index: 99; /* define a barra de navegação acima de outros elementos */
+}
+.navbar > div{
+    display: flex; /* usa flexbox para o layout */
+    align-items: center; /* alinha os itens ao centro */
+    justify-content: space-between; /* espaça os itens de forma uniforme */
+    position: relative; /* posicionamento relativo */
+}
+.logo{
+    margin-left: 6rem;
+    padding: 8px;
+}
+
+nav ul{
+    display: flex; /* usa flexbox */
+    list-style: none; /* remove os marcadores da lista */
+    align-items: center; /* alinha os itens ao centro verticalmente */
+}
+.nav-icon-container{
+    display: flex; /* usa flexbox para os ícones de navegação */
+    align-items: center; /* alinha os itens */
+}
+.nav-icon-container img{
+    width: 30px; /* largura dos ícones */
+    cursor: pointer; /* muda o cursor para indicar clicabilidade */
+}
+.nav-icon-container img:first-child{
+    margin-right: 1rem; /* adiciona margem à direita do primeiro ícone */
+}
+nav ul li{
+    color: #fff; /* cor do texto */
+    margin-right: 1.5rem; /* espaçamento entre os itens */
+    cursor: pointer; /* muda o cursor para indicar clicabilidade */
+}
+nav ul li:hover{
+    transform: translateY(-5px); /* move o item para cima ao passar o mouse */
+    transition: all 0.2s; /* transição suave */
+    font-weight: bold; /* deixa o texto em negrito ao passar o mouse */
+}
+.menu-button{
+    display: none; /* esconde o botão do menu por padrão */
+}
+/* header */
+header{
+    background-image: radial-gradient(#fff, #c7c7c7); /* gradiente radial de fundo do cabeçalho */
+}
+.header-bottom-side{
+    display: flex; /* usa flexbox para a parte inferior do cabeçalho */
+    align-items: center; /* alinha os itens */
+    justify-content: center; /* centraliza o conteúdo horizontalmente */
+    padding: 1rem; /* padding da parte inferior do cabeçalho */
+}
+.header-bottom-side-left{
+    flex-basis: 50%; /* o lado esquerdo ocupa 50% do espaço disponível */
+    text-align: center; /* centraliza o texto */
+}
+.header-bottom-side-left h2{
+    font-size: 3.2rem; /* tamanho da fonte do título */
+    margin-bottom: 1.5rem; /* margem inferior do título */
+}
+.header-bottom-side-left p{
+    font-size: 1.5rem; /* tamanho da fonte do parágrafo */
+    margin-bottom: 1.5rem; /* margem inferior do parágrafo */
+}
+.header-bottom-side-left button{
+    background-color: #c1272d; /* cor de fundo do botão */
+    border: none; /* remove a borda do botão */
+    cursor: pointer; /* muda o cursor para indicar clicabilidade */
+    padding: 0.8rem 3.8rem; /* padding do botão */
+    color: #fff; /* cor do texto do botão */
+    border-radius: 9999px; /* bordas arredondadas do botão */
+    font-weight: 500; /* espaço de ocupação do botão */
+    font-size: 1rem; /* tamanho da fonte do botão */
+}
+.header-bottom-side-left button:hover{
+    background-color: #631e20; /* cor de fundo do botão ao passar o mouse */
+    font-size: 1rem; /* mantém o tamanho da fonte ao passar o mouse */
+    transition: all 0.2s; /* transição suave */
+}
+.header-bottom-side-right{
+    flex-basis: 50%; /* o lado direito ocupa 50% do espaço disponível */
+    display: flex; /* usa flexbox */
+    align-items: center; /* alinha os itens ao centro */
+    justify-content: center; /* centraliza o conteúdo */
+}
+.header-bottom-side-right img{
+    max-width: 100%; /* largura máxima da imagem */
+    height: auto; /* altura automática da imagem */
+    position: relative; /* posicionamento relativo para ajustes */
+}
+.main{
+    background-color: #ebebeb; /* cor de fundo do conteúdo principal */
+}
+.gray-background{
+    background-color: #ebebeb; /* cor de fundo cinza */
+    padding: 1px; /* padding da seção */
+    color: #fff; /* cor do texto */
+}
+.page-inner-content{
+    max-width: 1280px; /* largura máxima do conteúdo */
+    margin: auto; /* centraliza o conteúdo */
+    padding: 2rem 0; /* padding vertical da seção */
+}
+.cols{
+    display: grid; /* usa grid para o layout das colunas */
+    gap: 1rem; /* espaçamento entre os itens */
+    padding: 1rem; /* padding da seção */
+}
+.cols-3{
+    grid-template-columns: repeat(3, 1fr); /* define 3 colunas iguais */
+    gap: 2rem; /* espaçamento entre as colunas */
+    padding: 1rem; /* padding da seção */
+}
+.cols-3-2{
+    grid-template-columns: repeat(3, 1fr); /* define 3 colunas iguais */
+    gap: 2rem; /* espaçamento entre as colunas */
+    padding: 10px;
+    align-items: center;
+}
+.cols-4{
+    grid-template-columns: repeat(4, 1fr); /* define 4 colunas iguais */
+    gap: 1rem; /* espaçamento entre as colunas */
+    padding: 1rem; /* padding da seção */
+}
+.cols-3 img, .cols-4 img{
+    max-width: 100%; /* largura máxima das imagens */
+}
+.cols > *{
+    cursor: pointer; /* muda o cursor para indicar clicabilidade */
+    transition: all 0.2s; /* transição suave */
+}
+.cols > *:hover{
+    transform: translateY(-5px); /* move o item para cima ao passar o mouse */
+}
+.section-title-container{
+    background-color: #ebebeb; /* cor de fundo da seção */
+    padding: 2rem 1rem; /* padding da seção */
+    text-align: center; /* centraliza o texto */
+}
+.section-title{
+    text-align: center; /* centraliza o texto */
+    margin-top: 2rem; /* margem superior do título */
+    font-size: 1.8rem; /* tamanho da fonte do título */
+    color: #2c2c2c; /* cor do texto do título */
+}
+.subtitle-underline{
+    width: 100px; /* largura da linha do subtítulo */
+    height: 5px; /* altura da linha do subtítulo */
+    background-color: #c1272d; /* cor da linha do subtítulo */
+    border-radius: 9999px; /* bordas arredondadas */
+    margin: 8px auto 0; /* margem superior da linha */
+}
+.product{
+    color: #2c2c2c; /* cor do texto do produto */
+    margin-bottom: 1rem; /* margem inferior do produto */
+    display: flex; /* usa flexbox para o produto */
+    flex-direction: column; /* direção da flexbox */
+    align-items: baseline; /* alinha os itens ao início */
+}
+.product-name{
+    font-weight: 600; /* peso da fonte do nome do produto */
+    margin-top: 0.4rem; /* margem superior do nome do produto */
+}
+.rate{
+    color: #c1272d; /* cor da avaliação */
+    font-size: 1.3rem; /* tamanho da fonte da avaliação */
+}
+.product-price span{
+    font-weight: 600; /* peso da fonte do preço */
+}
+.product-price{
+    font-weight: 600; /* peso da fonte do preço */
+}
+footer{
+    background-color: #802629; /* cor de fundo do rodapé */
+    color: #fff; /* cor do texto do rodapé */
+    text-align: center; /* centraliza o texto */
+    padding: 1rem 0; /* padding do rodapé */
+    position: relative; /* posicionamento relativo para ajustes */
+    height: 9rem;
+}
+.subtitle-underline{
+    width: 50px; /* largura da linha do subtítulo */
+    height: 10px; /* altura da linha do subtítulo */
+    background-color: #c1272d; /* cor da linha do subtítulo */
+    margin: 0.5rem auto 2rem auto; /* margens da linha do subtítulo */
+}
+/* media queries */
+@media (max-width: 800px) {
+    .logo{
+        font-size: 1.2rem; /* tamanho da fonte do logotipo em telas menores */
+        margin-left: 2rem;
+    }
+    .menu-button{
+        display: block; /* mostra o botão do menu em telas menores */
+        margin-right: 22px; /* margem para direita */
+    }
+    .header-bottom-side{
+        flex-direction: column; /* direção da flexbox em telas menores */
+        text-align: center; /* centraliza o texto */
+        padding-top: 4rem; /* padding superior do cabeçalho em telas menores */
+    }
+    .header-bottom-side-left h2{
+        font-size: 2rem;
+        
+    }
+    .header-bottom-side-left p{
+        font-size: 20px;
+    }
+    nav{
+        position: absolute; /* posiciona o menu de navegação absolutamente */
+        background-color: #46191b; /* cor de fundo do menu de navegação */
+        width: 100%; /* largura do menu de navegação */
+        top: 65px; /* distância do topo */
+        display: none; /* esconde o menu por padrão */
+        
+    }
+    .show-menu nav{
+        display: block; /* mostra o menu ao ativar a classe 'show-menu' */
+    }
+    nav ul{
+        flex-direction: column; /* direção da flexbox em telas menores */
+    }
+    nav ul li{
+        text-align: center; /* centraliza o texto */
+        padding: 0.8rem; /* padding dos itens do menu */
+    }
+    .section-title{
+        font-size: 2rem; /* tamanho da fonte do título da seção em telas menores */
+    }
+    .cols-3, .cols-3-2{
+        grid-template-columns: repeat(1, 1fr); /* define 1 coluna em telas menores */
+        justify-items: center;
+    }
+    .cols-4{
+        grid-template-columns: repeat(2, 1fr); /* define 2 colunas em telas menores */
+    }
+    .product-name, .product-price, .rate{
+        max-height: 1rem; /* altura máxima dos detalhes do produto */
+        overflow: hidden; /* esconde o excesso de texto */
+        font-size: 0.8rem; /* tamanho da fonte dos detalhes do produto */
+    }
+}
